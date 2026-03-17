@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee367b20-72e6-4a2f-ab5f-0f5b0ebe52b1" name="Changes" comment="inicial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Aula 01 - Condicionais/Desafio 01 - Condicionais/desafio-condicionais.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Aula 01 - Condicionais/condicionais.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Aula 01 - Condicionais/condicionais.ipynb" afterDir="false" />
+    <list default="true" id="ee367b20-72e6-4a2f-ab5f-0f5b0ebe52b1" name="Changes" comment="Resolvendo desafio de condicionais proposto">
+      <change afterPath="$PROJECT_DIR$/Aula 01 - Condicionais/Desafio 01 - Condicionais/calcular-tempo.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773769540697</updated>
-      <workItem from="1773769541698" duration="2028000" />
+      <workItem from="1773769541698" duration="2427000" />
     </task>
     <task id="LOCAL-00001" summary="inicial commit">
       <option name="closed" value="true" />
@@ -94,7 +91,31 @@
       <option name="project" value="LOCAL" />
       <updated>1773769700873</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="gitignore atualizado">
+      <option name="closed" value="true" />
+      <created>1773771616158</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1773771616158</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Aprendendo Condicionais">
+      <option name="closed" value="true" />
+      <created>1773771626380</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1773771626380</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Resolvendo desafio de condicionais proposto">
+      <option name="closed" value="true" />
+      <created>1773771643706</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1773771643706</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +123,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="inicial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="inicial commit" />
+    <MESSAGE value="gitignore atualizado" />
+    <MESSAGE value="Aprendendo Condicionais" />
+    <MESSAGE value="Resolvendo desafio de condicionais proposto" />
+    <option name="LAST_COMMIT_MESSAGE" value="Resolvendo desafio de condicionais proposto" />
   </component>
 </project>
