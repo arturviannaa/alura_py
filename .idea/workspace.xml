@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee367b20-72e6-4a2f-ab5f-0f5b0ebe52b1" name="Changes" comment="Resolvendo desafio de condicionais proposto">
-      <change afterPath="$PROJECT_DIR$/Aula 01 - Condicionais/Desafio 01 - Condicionais/calcular-tempo.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aula 01 - Condicionais/Desafio 01 - Condicionais/dasafio-temperatura.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1773769540697</updated>
-      <workItem from="1773769541698" duration="2427000" />
+      <workItem from="1773769541698" duration="3245000" />
     </task>
     <task id="LOCAL-00001" summary="inicial commit">
       <option name="closed" value="true" />
@@ -115,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773771643706</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Resolvendo desafio de condicionais proposto">
+      <option name="closed" value="true" />
+      <created>1773772022163</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1773772022163</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
