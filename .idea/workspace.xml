@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee367b20-72e6-4a2f-ab5f-0f5b0ebe52b1" name="Changes" comment="Resolvendo desafio de condicionais proposto">
-      <change afterPath="$PROJECT_DIR$/Aula 01 - Condicionais/Desafio 01 - Condicionais/dasafio-temperatura.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aula 02 - Laços For e While/exemplo-for.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aula 02 - Laços For e While/exemplo-while.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aula 02 - Laços For e While/funcoes-uteis.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Aula 03 - Funções/exemplo-funcoes.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/alura_py.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/alura_py.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,25 +29,25 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "arturviannaa"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;arturviannaa&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/arturviannaa/alura_py.git",
-    "accountId": "d64155d0-26b1-45c0-9f15-9a8d8fba0df9"
+    "accountId": "066bee2d-f2dd-4fbd-87f5-570288f6d704"
   }
 }]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="3B5CS8QEvENsIK7kUdNrM8Hy44k" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -52,6 +59,8 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
@@ -82,6 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1773769540697</updated>
       <workItem from="1773769541698" duration="3245000" />
+      <workItem from="1774477851431" duration="2273000" />
     </task>
     <task id="LOCAL-00001" summary="inicial commit">
       <option name="closed" value="true" />

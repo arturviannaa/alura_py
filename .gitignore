@@ -1,6 +1,6 @@
 # Ambientes Virtuais (Crucial para o seu caso)
-.venv/
-venv/
+#.venv/
+#venv/
 env/
 
 # Configurações do PyCharm / JetBrains
