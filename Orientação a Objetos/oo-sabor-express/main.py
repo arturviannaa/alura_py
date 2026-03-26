@@ -6,10 +6,10 @@ restaurante_japones = Restaurante("Japa", "Japonesa")
 
 restaurante_mexicano.alternar_estado()
 
-restaurante_praca.receber_avaliacao("Vianna", 10)
-restaurante_praca.receber_avaliacao("João", 8)
-restaurante_praca.receber_avaliacao("Maria", 5)
-restaurante_praca.receber_avaliacao("Paulo", 3)
+restaurante_praca.receber_avaliacao("Vianna", 5)
+restaurante_praca.receber_avaliacao("João", 4)
+restaurante_praca.receber_avaliacao("Maria", 2.5)
+restaurante_praca.receber_avaliacao("Paulo", 1)
 
 def main():
     Restaurante.listar_restaurantes()
