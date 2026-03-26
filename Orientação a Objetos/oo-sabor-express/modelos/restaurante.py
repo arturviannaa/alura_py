@@ -27,9 +27,8 @@ class Restaurante:
         self._ativo = not self._ativo
 
     def receber_avaliacao(self, cliente, nota):
-        if 0 < nota <= 5:
-            avaliacao = Avaliacao(cliente, nota)
-            self._avaliacao.append(avaliacao)
+        avaliacao = Avaliacao(cliente, nota)
+        self._avaliacao.append(avaliacao)
 
     @property
     def media_avaliacoes(self):
