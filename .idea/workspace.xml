@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee367b20-72e6-4a2f-ab5f-0f5b0ebe52b1" name="Changes" comment="Update: Lógica de avaliações corrigida para nota máxima de 5.">
+    <list default="true" id="ee367b20-72e6-4a2f-ab5f-0f5b0ebe52b1" name="Changes" comment="Novas regras de negócio adicionadas.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Orientação a Objetos/oo-sabor-express/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Orientação a Objetos/oo-sabor-express/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orientação a Objetos/oo-sabor-express/modelos/avaliacao.py" beforeDir="false" afterPath="$PROJECT_DIR$/Orientação a Objetos/oo-sabor-express/modelos/avaliacao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Orientação a Objetos/oo-sabor-express/modelos/restaurante.py" beforeDir="false" afterPath="$PROJECT_DIR$/Orientação a Objetos/oo-sabor-express/modelos/restaurante.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,31 +50,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.restaurante.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.main.executor": "Run",
+    "Python.restaurante.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/vianna/PycharmProjects/alura_py",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -89,7 +93,9 @@
       <updated>1773769540697</updated>
       <workItem from="1773769541698" duration="3245000" />
       <workItem from="1774477851431" duration="15340000" />
-      <workItem from="1774526177222" duration="1256000" />
+      <workItem from="1774526177222" duration="2942000" />
+      <workItem from="1774529283742" duration="22000" />
+      <workItem from="1774558846015" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="inicial commit">
       <option name="closed" value="true" />
@@ -179,7 +185,23 @@
       <option name="project" value="LOCAL" />
       <updated>1774526773075</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update: Lógica de avaliações corrigida para nota máxima de 5.">
+      <option name="closed" value="true" />
+      <created>1774527440424</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1774527440424</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Novas regras de negócio adicionadas.">
+      <option name="closed" value="true" />
+      <created>1774527703598</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1774527703598</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,7 +217,8 @@
     <MESSAGE value="Funções" />
     <MESSAGE value="Projeto orientado a objetos" />
     <MESSAGE value="Update: Lógica de avaliações corrigida para nota máxima de 5." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Lógica de avaliações corrigida para nota máxima de 5." />
+    <MESSAGE value="Novas regras de negócio adicionadas." />
+    <option name="LAST_COMMIT_MESSAGE" value="Novas regras de negócio adicionadas." />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/alura_py$main.coverage" NAME="main Coverage Results" MODIFIED="1774527410349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Orientação a Objetos/oo-sabor-express" />

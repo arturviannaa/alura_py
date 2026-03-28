@@ -1,40 +1,62 @@
-from .avaliacao import Avaliacao
+from typing import List, Optional
+from modelos.avaliacao import Avaliacao
 
 class Restaurante:
-    restaurantes = []
+    _restaurantes: List['Restaurante'] = []
 
     def __init__(self, nome: str, categoria: str) -> None:
-        self._nome = nome.title()
-        self._categoria = categoria.upper()
+        if not nome or not categoria:
+            raise ValueError("Nome e Categoria são campos obrigatórios.")
+        
+        self._nome = nome.strip().title()
+        self._categoria = categoria.strip().upper()
         self._ativo = False
-        self._avaliacao = []
-        Restaurante.restaurantes.append(self)
+        self._avaliacoes: List[Avaliacao] = []
+
+        self._soma_notas = 0.0
+        
+        Restaurante._restaurantes.append(self)
 
     def __str__(self) -> str:
-        return f"Nome: {self._nome} | Categoria: {self._categoria}"
-
-    @classmethod
-    def listar_restaurantes(cls):
-        print(f"{'Nome do restaurante'.ljust(25)} | {'Categoria'.ljust(25)} | {'Avaliação'.ljust(25)} | {'Status'}\n")
-        for restaurante in cls.restaurantes:
-            print(f"{restaurante._nome.ljust(25)} | {restaurante._categoria.ljust(25)} | {str(restaurante.media_avaliacoes).ljust(25)} | {restaurante.ativo}")
+        return f"{self._nome} | {self._categoria}"
 
     @property
-    def ativo(self):
+    def nome(self) -> str:
+        return self._nome
+
+    @property
+    def categoria(self) -> str:
+        return self._categoria
+
+    @property
+    def ativo(self) -> str:
         return 'Ativado' if self._ativo else 'Desativado'
 
-    def alternar_estado(self):
+    @property
+    def media_avaliacoes(self) -> float:
+        if not self._avaliacoes:
+            return 0.0
+        return round(self._soma_notas / len(self._avaliacoes), 1)
+
+    def alternar_estado(self) -> None:
         self._ativo = not self._ativo
 
-    def receber_avaliacao(self, cliente, nota):
-        avaliacao = Avaliacao(cliente, nota)
-        self._avaliacao.append(avaliacao)
+    def receber_avaliacao(self, cliente: str, nota: float, comentario: str) -> None:
+        nova_avaliacao = Avaliacao(cliente, nota, comentario)
+        self._avaliacoes.append(nova_avaliacao)
+        self._soma_notas += nova_avaliacao.nota
 
+    @classmethod
     @property
-    def media_avaliacoes(self):
-        if not self._avaliacao:
-            return 'Sem Avaliação'
-        soma_das_notas = sum(avaliacao._nota for avaliacao in self._avaliacao)
-        quantidade_de_notas = len(self._avaliacao)
-        media = round(soma_das_notas / quantidade_de_notas, 1)
-        return media
+    def todos(cls) -> List['Restaurante']:
+        return cls._restaurantes
+
+    @classmethod
+    def listar_restaurantes(cls) -> None:
+        header = f"{'Nome do restaurante'.ljust(25)} | {'Categoria'.ljust(25)} | {'Avaliação'.ljust(25)} | {'Status'}"
+        print(f"\n{header}")
+        print("-" * len(header))
+        
+        for restaurante in cls._restaurantes:
+            media = str(restaurante.media_avaliacoes) if restaurante.media_avaliacoes > 0 else 'Sem Avaliação'
+            print(f"{restaurante.nome.ljust(25)} | {restaurante.categoria.ljust(25)} | {media.ljust(25)} | {restaurante.ativo}")
